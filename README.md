@@ -71,7 +71,7 @@ The tests are organized into collections within Postman, each focusing on specif
 
 - Ping - HealthCheck: Test Task for checking the API's health status.
 
-For more details on the test scenarios, expected outcomes, and specific requests you will find it in the Google sheets(https://docs.google.com/spreadsheets/d/1D-xLCOiNJyycsRCLlbhDLvYaAMGR-jPT3qeNSEzXP-Q/edit#gid=3)
+For more details on the test scenarios, expected outcomes, and specific requests you will find them in the Google Sheets (https://docs.google.com/spreadsheets/d/1saJHUvAjCNjZ-i4enfGtgWL8LNLOINWHmw2tIsTTdyg/edit?usp=sharing))
 Generating HTML Reports
 Newman supports multiple reporters, including htmlextra, which generates detailed HTML reports for your API test runs. To generate HTML reports, simply specify the -r htmlextra option when running Newman, as shown in the example above.
 
