@@ -1,83 +1,79 @@
-Restful trello API Testing with Postman, Newman
-This repository contains automated API tests for the Restful Booker API, utilizing Postman collections and Newman for test execution. Additionally, it incorporates Jenkins for continuous integration and continuous delivery (CI/CD) to automate the testing process. The Restful Booker API is a sample API for testing and learning purposes. The test Modules covers a variety of endpoints and tests to ensure the API's functionality and reliability.
+# Restful Booker API Testing with Postman & Newman
 
-Table of Contents
-Technologies Used
-Features
-Prerequisites
-Installation
-Usage
-Test Tasks
-Generating HTML Reports
-Contact
-Technologies Used
-POSTMAN - Newman
+This repository hosts automated API tests for the Restful Booker API, leveraging Postman collections and Newman for test execution. It also integrates Jenkins for continuous integration and continuous delivery (CI/CD) to automate the testing process. The Restful Booker API serves as a sample API for both testing and learning purposes. The test suite encompasses various endpoints, ensuring the API's functionality and reliability.
 
-Features
-Detailed and organized API test suites.
-Test cases covering various endpoints, HTTP methods, and scenarios using Google sheets.
-Exported Postman collection for manual testing 
-Automation of API testing through cmd 
-Prerequisites
-Before you begin, ensure you have met the following requirements:
+## Table of Contents
 
-Postman: You need to have Postman installed. If you don't have it, you can download it from Postman Downloads.
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test Tasks](#test-tasks)
+- [Generating HTML Reports](#generating-html-reports)
+- [Contact](#contact)
 
-Newman: You can install Newman using Node.js. Make sure you have Node.js installed, and then run the following command:
+## Technologies Used
+- Postman
+- Newman
 
-npm install -g newman
-Jenkins: You will need a Jenkins server set up for CI/CD automation. You can install Jenkins following the instructions on the Jenkins website.
+## Features
+- Detailed and organized API test suites.
+- Comprehensive test cases covering various endpoints, HTTP methods, and scenarios, utilizing Google Sheets.
+- Exported Postman collection for manual testing.
+- Automation of API testing via command-line execution.
+- Jenkins integration for CI/CD automation.
 
-Installation
-Clone this repository to your local machine:
+## Prerequisites
+Before getting started, ensure you have:
 
-git clone (https://github.com/khallafo/Trello_api-testing)
-Navigate to the project directory:
+- **Postman**: Download it from [Postman Downloads](https://www.postman.com/downloads/).
+- **Newman**: Install via Node.js using `npm install -g newman`.
+- **Jenkins**: Set up a Jenkins server for CI/CD automation.
 
-cd Restful-Booker-APIS
-Install the project dependencies:
+## Installation
+Follow these steps to set up the project:
 
-Install Postman
-Install Newman
-Install Newman-reporter-htmlextra
-Usage
-Running Tests in Postman
+  1. Clone this repository to your local machine:
+  2. Navigate to the project directory:
+     cd Restful-Booker-APIS
+  3. Install project dependencies:
+    - Install Postman.
+    - Install Newman.
+    - Install Newman-reporter-htmlextra.
+## Usage
+### Running Tests in Postman
+1. Open Postman.
+2. Import the Postman collection.
+3. Configure environment variables using the provided Postman environment directory.
+4. Run the API tests using Postman's collection runner.
 
-Open Postman.
-Import the Postman collection.
-Configure the environment variables using the Postman environment "Bookingenvironment" directory or create your own environment file.
-Run the API tests using Postman's collection runner.
-Running Tests via the Command Line using the Newman
+### Running Tests via Command Line (Newman)
+Execute tests via the command line using Newman:
+  Newman runs BookingAPIS.json -e Bookingenvironment.json -r htmlextra     
 
-You can also run the tests via the command line using Newman. Use the following command to run a specific test suite, specifying the environment:
-
-newman run BookingAPIS.json -e Bookingenvironment.json -r htmlextra
-Test Tasks
+## Test Tasks
 The tests are organized into collections within Postman, each focusing on specific API tasks:
+- CREATE Token
+- GET ALL Booking ID
+- CREATE Booking
+- GET Details For Booking ID
+- UPDATE Booking
+- UPDATE Booking Partially
+- DELETE Booking
+- Ping - HealthCheck
 
-- CREATE Token: Test Task for creating an authentication token.
+For detailed test scenarios and requests, refer to the [Google Sheets](https://docs.google.com/spreadsheets/d/1saJHUvAjCNjZ-i4enfGtgWL8LNLOINWHmw2tIsTTdyg/edit?usp=sharing).
 
-- GET ALL Booking ID: Test Task for retrieving all booking IDs.
+## Generating HTML Reports
+Newman supports various reporters, including htmlextra, which generates detailed HTML reports for API test runs. To generate HTML reports, use `-r htmlextra` option when running Newman.
 
-- CREATE Booking: Test Task for creating a new booking.
+HTML reports will be available in the reports directory of this repository.
 
-- GET Details For Booking ID: Test Task for retrieving details of a specific booking ID.
+## Contact
+For questions, suggestions, or issues related to this project, please feel free to contact us:
 
-- UPDATE Booking: Test Task for updating an existing booking.
+- Email: mahmoudkhallaf288@gmail.com  
 
-- UPDATE Booking Partially: Test Task for partially updating an existing booking.
-
-- DELETE Booking: Test Task for deleting a booking.
-
-- Ping - HealthCheck: Test Task for checking the API's health status.
-
-For more details on the test scenarios, expected outcomes, and specific requests you will find them in the Google Sheets (https://docs.google.com/spreadsheets/d/1saJHUvAjCNjZ-i4enfGtgWL8LNLOINWHmw2tIsTTdyg/edit?usp=sharing))
-Generating HTML Reports
-Newman supports multiple reporters, including htmlextra, which generates detailed HTML reports for your API test runs. To generate HTML reports, simply specify the -r htmlextra option when running Newman, as shown in the example above.
-
-The HTML reports will be available in the reports directory of this repository.
-
-Contact
-If you have any questions, suggestions, or issues related to this project, please feel free to contact us. We welcome your feedback and contributions.
-
-Email: mahmoudkhallaf288@gmail.com
+      
+   
