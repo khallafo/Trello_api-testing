@@ -1,6 +1,6 @@
-# Restful Booker API Testing with Postman & Newman
+# Trello API Testing with Postman & Newman
 
-This repository hosts automated API tests for the Restful Booker API, leveraging Postman collections and Newman for test execution. It also integrates Jenkins for continuous integration and continuous delivery (CI/CD) to automate the testing process. The Restful Booker API serves as a sample API for both testing and learning purposes. The test suite encompasses various endpoints, ensuring the API's functionality and reliability.
+This repository hosts automated API tests for the Trello API, leveraging Postman collections and Newman for test execution. The trello API serves as a sample API for both testing and learning purposes. The test suite encompasses various endpoints, ensuring the API's functionality and reliability.
 
 ## Table of Contents
 
@@ -22,14 +22,12 @@ This repository hosts automated API tests for the Restful Booker API, leveraging
 - Comprehensive test cases covering various endpoints, HTTP methods, and scenarios, utilizing Google Sheets.
 - Exported Postman collection for manual testing.
 - Automation of API testing via command-line execution.
-- Jenkins integration for CI/CD automation.
 
 ## Prerequisites
 Before getting started, ensure you have:
 
 - **Postman**: Download it from [Postman Downloads](https://www.postman.com/downloads/).
 - **Newman**: Install via Node.js using `npm install -g newman`.
-- **Jenkins**: Set up a Jenkins server for CI/CD automation.
 
 ## Installation
 Follow these steps to set up the project:
